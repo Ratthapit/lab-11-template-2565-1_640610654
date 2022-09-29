@@ -6,7 +6,7 @@ export default function roomRoute(req, res) {
   if (!user) {
     return res.status(401).json({
       ok: false,
-      message: "Yon don't permission to access this api",
+      message: "Yon don't have permission to access this api",
     });
   }
   const chatrooms = readChatRoomsDB();
